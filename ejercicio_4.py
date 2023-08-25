@@ -12,7 +12,7 @@ def lista_compra(carrito):
 
     print(f"coste total  {total}")
 
-carrito_compra = {}
+carrito = {}
 def main():
     while True:
         articulo = input("ingresa el  artículo ( escriba 'salir' para terminar tarea): ")
@@ -22,9 +22,9 @@ def main():
         
         precio = int(input(f"ingresa el precio del {articulo}: "))
         
-        carrito_compra[articulo] = precio
+        carrito[articulo] = precio
 
-    lista_compra(carrito_compra)
+    lista_compra(carrito)
 
 if __name__ == "__main__":
     main()    
